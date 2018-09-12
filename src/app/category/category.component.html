@@ -1,0 +1,30 @@
+<p>
+  category works!
+</p>
+<div>
+    Showing product details for product: {{id}}
+  </div>
+   <div style="text-align:left;width:500px;">
+      <h1>
+          {{ title }}
+      </h1>
+    
+      <table *ngIf="arrName">
+          <!-- ADD HEADERS -->
+          <tr>
+              <th>ID</th>
+                  <th>Name of deivce</th>
+                  <th>Image</th>
+                      
+          </tr>
+    
+          <!-- BIND ARRAY TO TABLE -->
+          <tr *ngFor="let name of arrName">
+              <td>{{name.id}}</td>
+                  <td>{{name.name1}}</td>
+                  <td>{{name.url}}</td>
+                      
+          </tr>
+      </table>
+      <h3>{{ msg }}</h3>
+    </div> 
