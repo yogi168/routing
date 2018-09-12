@@ -1,21 +1,18 @@
-<p>
-  category works!
-</p>
-<div>
+<app-header></app-header>
+<div style="margin-top: 10%;text-align: center">
     Showing product details for product: {{id}}
-  </div>
-   <div style="text-align:left;width:500px;">
+  </div><br><br>
+   <div style="text-align:center;width:100%;">
       <h1>
           {{ title }}
       </h1>
     
-      <table *ngIf="arrName">
+      <table *ngIf="arrName" style="margin-left:auto; margin-right:auto">
           <!-- ADD HEADERS -->
           <tr>
               <th>ID</th>
-                  <th>Name of deivce</th>
-                  <th>Image</th>
-                      
+                  <th>Category Name</th>
+                  <th>Image</th>       
           </tr>
     
           <!-- BIND ARRAY TO TABLE -->
@@ -28,3 +25,4 @@
       </table>
       <h3>{{ msg }}</h3>
     </div> 
+    <app-footer></app-footer>
